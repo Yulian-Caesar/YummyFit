@@ -1,0 +1,269 @@
+.products {
+  padding: 220px 0 80px;
+}
+
+.products-title {
+  margin-bottom: 60px;
+}
+
+.products-wrap {
+  display: flex;
+  margin: 0 -15px 55px;
+}
+
+.products-item {
+  position: relative;
+  width: 25%;
+  padding: 0 15px;
+}
+
+.products-item:nth-child(even) {
+  padding-top: 70px;
+}
+
+.products-item:nth-child(even) .products-item__img {
+  margin: 0 0 50px;
+}
+
+.products-item:nth-child(even) .products-item__number {
+  top: -10px;
+}
+
+.products-item__number {
+  position: absolute;
+  top: 255px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: "Yeseva One";
+  font-size: 124px;
+  line-height: 100px;
+  color: #e5d7e1;
+}
+
+.products-item__content {
+  position: relative;
+  text-align: center;
+}
+
+.products-item__content:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 44px;
+  height: 4px;
+  background-color: #f6b220;
+}
+
+.products-item__title {
+  color: #171717;
+  font-size: 22px;
+  line-height: 1.1;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.products-item__text {
+  color: #444444;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.products-item__img {
+  margin-bottom: 120px;
+}
+
+.products-item__img img {
+  display: block;
+  border-radius: 40px;
+}
+
+.products-conclusion {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 12px 40px 10px;
+  border-radius: 40px;
+  border: 1px dashed #bfb6bc;
+}
+
+.products-conclusion:before,
+.products-conclusion:after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.products-conclusion:before {
+  width: 13px;
+  height: 13px;
+  background-color: #ee3071;
+}
+
+.products-conclusion:after {
+  width: 5px;
+  height: 5px;
+  background-color: #ffffff;
+}
+
+.products-conclusion__text {
+  text-align: center;
+  color: #171717;
+  font-size: 26px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1199px){
+  .products {
+    padding: 140px 0 60px;
+  }
+
+  .products-title {
+    margin-bottom: 40px;
+  }
+
+  .products-wrap {
+    margin: 0 -5px 25px;
+  }
+
+  .products-item {
+    padding: 0 5px;
+  }
+
+  .products-item__number {
+    top: 225px;
+  }
+
+}
+
+@media screen and (max-width: 1023px){
+  .products {
+    padding: 40px 0;
+  }
+
+  .products-item:nth-child(even) {
+    padding-top: 50px;
+  }
+
+  .products-item__img {
+    margin-bottom: 100px;
+  }
+
+  .products-item__number {
+    top: 165px;
+    font-size: 100px;
+    line-height: 80px;
+  }
+
+  .products-item__title {
+    font-size: 18px;
+  }
+
+  .products-item__text {
+    font-size: 16px;
+  }
+
+  .products-conclusion {
+    max-width: 480px;
+    padding: 12px 20px 10px;
+  }
+
+  .products-conclusion__text {
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width: 767px){
+  .products {
+    padding: 30px 0;
+  }
+
+  .products-title {
+    margin-bottom: 20px;
+  }
+
+  .products-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .products-item {
+    width: 50%;
+    max-width: 250px;
+  }
+
+  .products-item:nth-child(even) .products-item__number,
+  .products-item__number {
+    top: 225px;
+    font-size: 90px;
+    line-height: 70px;
+  }
+
+  .products-item:nth-child(even),
+  .products-item {
+    padding-top: 0;
+  }
+
+  .products-item:nth-child(even) .products-item__img,
+  .products-item__img{
+    margin-bottom: 80px;
+  }
+
+  .products-item__content:before {
+    top: -15px;
+  }
+
+  .products-item:nth-child(1),
+  .products-item:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media screen and (max-width: 639px){
+
+  .products-item {
+    max-width: 235px;
+  }
+
+  .products-item:nth-child(even) .products-item__number,
+  .products-item__number {
+    top: 210px;
+  }
+
+  .products-conclusion__text {
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width: 479px){
+  .products {
+    padding: 25px 0;
+  }
+
+  .products-item {
+    width: 100%;
+  }
+
+  .products-item:nth-child(3) {
+    margin-bottom: 20px;
+  }
+
+  .products-conclusion__text {
+    font-size: 17px;
+  }
+
+  .products-conclusion__text br {
+    display: none;
+  }
+
+}
