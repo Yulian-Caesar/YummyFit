@@ -386,6 +386,18 @@ img {
   max-width: 100%;
 }
 
+// -- nick ---
+.main-logo {
+  display: inline-block;
+  height: 1em;
+  vertical-align: bottom;
+}
+
+html {
+  overflow: visible;
+}
+// --
+
 
 ::-webkit-input-placeholder { color: #666666; font-size: 16px; }
 ::-moz-placeholder          { color: #666666; font-size: 16px; } /* Firefox 19+ */
@@ -399,6 +411,7 @@ img {
 @import "common/d__preference";
 @import "common/e__effect";
 @import "common/f__expert";
+@import "common/f__stats";
 @import "common/g__reviews";
 @import "common/h__reciept";
 @import "common/i__footer";

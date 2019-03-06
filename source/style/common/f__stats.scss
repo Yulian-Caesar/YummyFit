@@ -1,0 +1,149 @@
+.stats {
+  padding-top: 78px;
+  padding-bottom: 118px;
+
+  &-title {
+    margin-bottom: 19px;
+
+    & .main-logo {
+      display: block;
+      margin: 0 auto;
+
+      @media (min-width: 1200px) {
+        display: inline-block;
+        margin: 0;
+      }
+    }
+  }
+
+  &-subtitle {
+    margin-bottom: 20px;
+    color: #444444;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 22px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 46px;
+      font-size: 24px;
+    }
+  }
+
+  &-list {
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 36px;
+    }
+  }
+
+  &-item {
+    width: 100%;
+    max-width: 230px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+    @media (min-width: 768px) {
+      margin: 0 35px;
+
+      &:not(:last-of-type) {
+        position: relative;
+  
+        &::after {
+          content: "";
+          position: absolute;
+          top: 59%;
+          right: -37px;
+          width: 1px;
+          height: 95%;
+          max-height: 165px;
+          background-image: repeating-linear-gradient(to bottom, #e0b7d2, #e0b7d2 3px, transparent 3px, transparent 8px);
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+  }
+
+  &-value {
+    display: block;
+    margin-bottom: 5px;
+    color: #ff7fab;
+    font-size: 75px;
+    font-family: "Yeseva One", serif;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      margin-bottom: 12px;
+      font-size: 90px;
+    }
+    
+    @media (min-width: 1024px) {
+      font-size: 103px;
+    }
+  }
+
+  &-description {
+    position: relative;
+    display: block;
+    padding-top: 15px;
+    color: #444444;
+    font-size: 16px;
+    text-align: center;
+
+    & strong {
+      display: block;
+      font-size: 20px;
+    }
+
+    @media (min-width: 1024px) {
+      padding-top: 25px;
+      font-size: 18px;
+
+      & strong {
+        font-size: 24px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 44px;
+      height: 4px;
+      background-color: #f6b220;
+      transform: translateX(-50%);
+    }
+  }
+
+  &-note {
+    color: #444444;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+
+      & br {
+        display: none;
+      }
+    }
+  }
+}
