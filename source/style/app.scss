@@ -63,12 +63,12 @@ input::-ms-clear {
 }
 
 .title-img {
+  width: 225px;
   display: inline-block;
   vertical-align: middle;
 }
 
 .section-pink {
-  background-color: #fff3e3;
   background-image: linear-gradient(to top, #fdebf8 0%, #f5eff3 48%, #fdebf8 100%);
 }
 
@@ -409,12 +409,13 @@ html {
 @import "common/b__products";
 @import "common/c__secrets";
 @import "common/d__preference";
-@import "common/e__effect";
+@import "common/e__components";
 @import "common/f__expert";
-@import "common/f__stats";
-@import "common/g__reviews";
-@import "common/h__reciept";
-@import "common/i__footer";
+@import "common/g__stats";
+@import "common/h__reviews";
+@import "common/i__use";
+@import "common/j__delivery";
+@import "common/k__footer";
 @import "common/popup.scss";
 @import "common/slick.scss";
 @import "common/slick-theme.scss";
