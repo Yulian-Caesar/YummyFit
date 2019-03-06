@@ -63,6 +63,7 @@ input::-ms-clear {
 }
 
 .title-img {
+  width: 225px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -397,7 +398,7 @@ img {
 @import "common/b__products";
 @import "common/c__secrets";
 @import "common/d__preference";
-@import "common/e__effect";
+@import "common/e__components";
 @import "common/f__expert";
 @import "common/g__reviews";
 @import "common/h__reciept";
