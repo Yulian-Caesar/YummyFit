@@ -1,0 +1,21 @@
+@media screen and (min-width: 1200px){
+  .home.last-section {
+    padding: 95px 0 90px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .home.last-section {
+    padding: 95px 0 90px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .last-section .home-product {
+    bottom: -250px;
+  }
+}
+
+.last-section .home-people {
+  top: -135px;
+}

@@ -416,7 +416,8 @@ html {
 @import "common/h__reviews";
 @import "common/i__use";
 @import "common/j__delivery";
-@import "common/k__footer";
+@import "common/k__last-section";
+@import "common/l__footer";
 @import "common/popup.scss";
 @import "common/slick.scss";
 @import "common/slick-theme.scss";
@@ -447,7 +448,14 @@ html {
 }
 
 
-@media screen and (max-width: 1169px) {
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .white-section.section {
+    padding: 30px 0;
+  }
+
+  .section-pink.section {
+    padding: 80px 0 110px;
+  }
 
 }
 
