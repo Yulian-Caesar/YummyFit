@@ -18,7 +18,7 @@
   &-title {
     margin-bottom: 30px;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1023px) {
       margin-bottom: 51px;
     }
   }
@@ -42,17 +42,17 @@
     width: 300px;
     transform: translateX(-50%);
     
-    @media (min-width: 380px) {
+    /* @media (min-width: 380px) {
       top: 476px;
       width: 370px;
-    }
+    } */
 
-    @media (min-width: 768px) {
-      top: 486px;
+    @media (min-width: 767px) {
+      top: 467px;
       width: 95%;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1023px) {
       top: 500px;
       width: 98%;
     }
@@ -247,18 +247,30 @@
 .reviews-carousel-button {
     position: relative;
     display: block;
+    width: 42px;
     height: 40px;
-    width: 40px;
     line-height: 0px;
     font-size: 0px;
+    margin: 0;
+    padding: 0;
     cursor: pointer;
     background: transparent;
-    background-color: #ee3071;
     color: transparent;
     padding: 0;
     border: none;
-    border-radius: 50%;
     outline: none;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: #ee3071;
+      border-radius: 50%;
+      transform: translateX(-50%);
+    }
 
     &:hover {
         outline: none;
@@ -273,7 +285,7 @@
     left: -72px;
   }
 
-    &:before {
+    &:after {
         content: "";
         position: absolute;
         top: 50%;
@@ -308,7 +320,7 @@
     right: -72px;
   }
 
-    &:before {
+    &:after {
         content: "";
         position: absolute;
         top: 50%;

@@ -87,6 +87,10 @@
   font-size: 20px;
   line-height: 1.4;
   font-weight: 500;
+
+  @media (max-width: 767px) {
+    line-height: 1.2;
+  }
 }
 
 .use-item__text:before {
