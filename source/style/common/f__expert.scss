@@ -98,10 +98,6 @@
     & .font_medium {
       color: black;
       // font-size: 18px;
-
-      @media (min-width: 1200px) {
-        font-size: 20px;
-      }
     }
 
     & p:not(:last-of-type) {
@@ -111,5 +107,16 @@
         margin-bottom: 28px;
       }
     }
+  }
+}
+
+
+.expert-text__title {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1199px){
+  .expert-text__title {
+    font-size: 18px;
   }
 }
