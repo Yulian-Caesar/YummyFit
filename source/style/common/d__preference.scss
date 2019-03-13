@@ -102,8 +102,16 @@
     margin-bottom: 40px;
   }
 
+  .preference-item__img {
+    margin-bottom: 30px;
+  }
+
   .preference-wrap {
     margin: 0 -25px 40px;
+  }
+
+  .preference-item__text:before {
+    top: -14px;
   }
 
 }
@@ -115,22 +123,17 @@
 
   .preference-wrap {
     margin: 0 -10px 20px;
+    justify-content: center;
   }
 
   .preference-item {
+    max-width: 255px;
     padding: 0 10px;
   }
 
-  .preference-item__img {
-    margin-bottom: 40px;
-  }
 
   .preference-item__text {
     font-size: 18px;
-  }
-
-  .preference-item__text:before {
-    top: -18px;
   }
 
   .preference-conclusion__title {
@@ -207,7 +210,7 @@
   }
 
   .preference-conclusion__content {
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
   }
 
   .preference-button {
@@ -235,6 +238,10 @@
 
   .preference-conclusion__text br {
     display: none;
+  }
+
+  .preference-conclusion__content {
+    text-align: center;
   }
 
 }

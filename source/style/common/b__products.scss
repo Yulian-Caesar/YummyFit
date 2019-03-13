@@ -262,8 +262,10 @@
     width: 100%;
   }
 
+  .products-item:nth-child(1),
+  .products-item:nth-child(2),
   .products-item:nth-child(3) {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .products-conclusion__text {
@@ -272,6 +274,18 @@
 
   .products-conclusion__text br {
     display: none;
+  }
+
+  .products-item:nth-child(even) .products-item__number,
+  .products-item__number {
+    font-size: 80px;
+    line-height: 60px;
+  }
+
+
+  .products-item:nth-child(even) .products-item__img,
+  .products-item__img {
+    margin-bottom: 70px;
   }
 
 }

@@ -1,29 +1,13 @@
 // nick-everhard
+
+var addReviewClass = function () {
+    $(this).parent('.review').toggleClass('active');
+};
+
+$(document).on('click', '.review-toggler', addReviewClass);
+
+
 $(function() {
-  /* тогглер для карточек отзывов */
-  var $togglerCollection = $('button.review-toggler');
-  var $textCollection = $('.review-text');
-
-  $togglerCollection.click(function() {
-    var $this = $(this);
-    var $thisText = $this.siblings().find('.review-text');
-
-    if (!$thisText.hasClass('review-text_visible')) {
-      $togglerCollection.removeClass('review-toggler_active');
-      $this.toggleClass('review-toggler_active');
-      $textCollection.removeClass('review-text_visible');
-      $thisText.toggleClass('review-text_visible');
-      return;
-    }
-
-    if ($thisText.hasClass('review-text_visible')) {
-      $togglerCollection.removeClass('review-toggler_active');
-      $textCollection.removeClass('review-text_visible');
-      return;
-    }
-
-  });
-
   /* инициализация карусели для отзывов */
   var $reviewsCarousel = $('.reviews-list');
   var $reviewsCarouselSettings = {
@@ -41,15 +25,20 @@ $(function() {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 2
         }
+      },
+      {
+          breakpoint: 640,
+          settings: {
+              slidesToShow: 1
+          }
       }
     ]
   };
   
   $reviewsCarousel.on('beforeChange', function(){
-    $togglerCollection.removeClass('review-toggler_active');
-    $textCollection.removeClass('review-text_visible');
+      $('.review').removeClass('active');
   });
   
   $reviewsCarousel.slick($reviewsCarouselSettings);

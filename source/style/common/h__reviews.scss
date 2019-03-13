@@ -7,10 +7,6 @@
 
 .reviews {
 
-  &::before {
-    top: -22px;
-  }
-
   &-wrapper {
     position: relative;
   }
@@ -48,7 +44,7 @@
     }
 
     @media (min-width: 1024px) {
-      top: 500px;
+      top: 493px;
       width: 98%;
     }
 
@@ -79,8 +75,7 @@
   margin: 0 auto;
   text-align: center;
   border-radius: 40px;
-  // background-color: crimson;
-  box-shadow: 0px 5px 21px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08);
 
   @media (min-width: 1200px) {
     max-width: 370px;
@@ -187,17 +182,9 @@
       left: 0;
       width: 100%;
       height: 2em;
-      background-image: linear-gradient(to bottom, transparent, white);
+      background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
     }
 
-    &_visible {
-      height: auto;
-      overflow: visible;
-  
-      &::after {
-        content: none;
-      }
-    }
   }
 
   &-toggler {
@@ -232,11 +219,7 @@
     &:active {
       background-color: #f6b220;
     }
-    
-    &_active {
-      background-color: #ee3071;
-      transform: scale(-1);
-    }
+
   }
 }
 
@@ -366,10 +349,74 @@
 
 }
 
+
+.review.active .review-text {
+  height: auto;
+  overflow: visible;
+}
+
+.review.active .review-text:after {
+  content: none;
+}
+
+.review.active .review-toggler {
+  background-color: #ee3071;
+  transform: scale(-1);
+}
+
+@media screen and (max-width: 1023px) {
+  .review-text {
+    height: 234px;
+  }
+}
+
 @media screen and (max-width: 767px){
   .reviews-list {
     padding: 0;
   }
+
+  .review {
+    max-width: 300px;
+  }
+
+  .review-text br {
+    display: none;
+  }
+
+  .reviews-navigation {
+    top: 360px;
+    width: 610px;
+  }
+
+  .review-about {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .review-cite {
+    margin-bottom: 15px;
+  }
+
+  .review-text {
+    padding-top: 15px;
+  }
+
+}
+
+@media screen and (max-width: 639px) {
+  .reviews-navigation {
+    top: 360px;
+    width: 310px;
+  }
+
+  .review {
+    max-width: 340px;
+  }
+
+  .review-text {
+    height: 208px;
+  }
+
 }
 
 @media screen and (max-width: 479px) {
@@ -384,6 +431,10 @@
 
   .review-text br {
     display: none;
+  }
+
+  .reviews-button {
+    margin-top: 20px;
   }
 
 }
