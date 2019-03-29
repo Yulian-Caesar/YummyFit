@@ -31,7 +31,7 @@
 
   &-navigation {
     position: absolute;
-    top: 371px;
+    top: 355px;
     left: 50%;
     display: flex;
     justify-content: space-between;
@@ -39,12 +39,11 @@
     transform: translateX(-50%);
 
     @media (min-width: 768px) {
-      top: 467px;
       width: 98%;
     }
 
     @media (min-width: 1024px) {
-      top: 493px;
+      top: 378px;
       width: 98%;
     }
 
@@ -226,34 +225,25 @@
 .reviews-carousel-button {
     position: relative;
     display: block;
-    width: 42px;
+    width: 40px;
     height: 40px;
     line-height: 0px;
     font-size: 0px;
     margin: 0;
     padding: 0;
     cursor: pointer;
-    background: transparent;
     color: transparent;
+    background-color: #ee3071;
+    border-radius: 50%;
     padding: 0;
-    border: none;
+    border: 1px solid #ee3071;
     outline: none;
-    
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 40px;
-      height: 40px;
-      background-color: #ee3071;
-      border-radius: 50%;
-      transform: translateX(-50%);
-    }
+    transition: .5;
 
     &:hover {
         outline: none;
-        opacity: 0.2;
+        background: #fdb234;
+        border-color: #fdb234;
       }
 }
 
@@ -333,11 +323,6 @@
     padding: 0 50px;
   }
 
-  .reviews-carousel-button {
-    width: 37px;
-    height: 35px;
-  }
-
   .reviews-carousel-button::before {
     width: 35px;
     height: 35px;
@@ -364,10 +349,26 @@
   transform: scale(-1);
 }
 
+@media screen and (max-width: 1199px){
+  .reviews-title {
+    margin-bottom: 30px;
+  }
+
+  .review-text {
+    height: 268px;
+  }
+
+}
+
 @media screen and (max-width: 1023px) {
   .review-text {
     height: 234px;
   }
+
+  .reviews-title {
+    margin-bottom: 20px;
+  }
+
 }
 
 @media screen and (max-width: 767px){
@@ -384,7 +385,7 @@
   }
 
   .reviews-navigation {
-    top: 360px;
+    top: 335px;
     width: 610px;
   }
 
@@ -401,11 +402,14 @@
     padding-top: 15px;
   }
 
+  .reviews-title {
+    margin-bottom: 10px;
+  }
+
 }
 
 @media screen and (max-width: 639px) {
   .reviews-navigation {
-    top: 360px;
     width: 310px;
   }
 

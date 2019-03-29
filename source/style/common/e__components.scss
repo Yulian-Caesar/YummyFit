@@ -411,7 +411,7 @@
     top: inherit;
     bottom: -140px;
     transform: translate(-50%, 0);
-    left: 50%;
+    left: 40%;
   }
 
   .components-evening .components-item__product {
@@ -419,7 +419,7 @@
     right: inherit;
     bottom: -150px;
     transform: translate(-50%, 0);
-    left: 50%;
+    left: 40%;
   }
 
   .components-morning .components-item__logo:before,
@@ -495,7 +495,12 @@
     max-width: 300px;
   }
 
+  .components-morning .components-item__product {
+    left: 43%;
+  }
+
   .components-evening .components-item__product {
+    left: 43%;
     bottom: -160px;
   }
 
@@ -504,5 +509,7 @@
     height: 50px;
     background-size: 35px;
   }
+
+
 
 }

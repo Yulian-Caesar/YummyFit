@@ -2,11 +2,20 @@
   .preference.section {
     padding: 40px 0 50px;
   }
+
+  .preference .wrapper {
+    max-width: 910px;
+  }
+
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .preference .wrapper {
+    max-width: 930px;
+  }
+}
 
 .preference .wrapper {
-  max-width: 910px;
   margin: 0 auto;
 }
 
@@ -94,10 +103,6 @@
 }
 
 @media screen and (max-width: 1199px){
-  .preference .wrapper {
-    max-width: 930px;
-  }
-
   .preference-title {
     margin-bottom: 40px;
   }
